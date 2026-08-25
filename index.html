@@ -1,1 +1,229 @@
-<h1>紫.台灣</h1>
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>紫.台灣</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      min-height: 100vh;
+      background:
+        radial-gradient(circle at 30% 20%, #32105e 0%, transparent 35%),
+        radial-gradient(circle at 80% 80%, #1d0b38 0%, transparent 30%),
+        #08080d;
+
+      color: #eeeeee;
+      font-family: Arial, "Microsoft JhengHei", sans-serif;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 800px;
+    }
+
+    .logo {
+      font-size: 90px;
+      font-weight: bold;
+      color: #a855f7;
+      margin-bottom: 10px;
+    }
+
+    .domain {
+      font-size: 18px;
+      color: #888;
+      letter-spacing: 4px;
+      margin-bottom: 35px;
+    }
+
+    h1 {
+      font-size: 42px;
+      margin-bottom: 15px;
+    }
+
+    .description {
+      color: #aaa;
+      line-height: 1.8;
+      margin-bottom: 35px;
+      font-size: 17px;
+    }
+
+    .buttons {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 12px 22px;
+
+      border: 1px solid #7e22ce;
+      border-radius: 8px;
+
+      color: #ddd;
+      text-decoration: none;
+
+      transition: 0.2s;
+    }
+
+    .button:hover {
+      background: #7e22ce;
+      color: white;
+      transform: translateY(-2px);
+    }
+
+    .terminal {
+      margin-top: 55px;
+
+      background: rgba(0, 0, 0, 0.35);
+      border: 1px solid #292929;
+      border-radius: 10px;
+
+      padding: 22px;
+
+      font-family: monospace;
+      line-height: 1.8;
+      color: #aaa;
+    }
+
+    .purple {
+      color: #c084fc;
+    }
+
+    footer {
+      margin-top: 40px;
+      color: #555;
+      font-size: 14px;
+    }
+
+    @media (max-width: 600px) {
+      .logo {
+        font-size: 70px;
+      }
+
+      h1 {
+        font-size: 32px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <main class="container">
+
+    <div class="logo">紫.</div>
+
+    <div class="domain">
+      紫.台灣
+    </div>
+
+    <h1>Hello, I'm Zaiden.</h1>
+
+    <p class="description">
+      Research · Code · Random Stuff<br>
+      這裡是我的個人空間，放一些專案、研究與奇怪的東西。
+    </p>
+
+    <div class="buttons">
+
+      <a
+        class="button"
+        href="https://github.com/zaidenx"
+        target="_blank"
+      >
+        GitHub
+      </a>
+
+      <a
+        class="button"
+        href="#projects"
+      >
+        Projects
+      </a>
+
+      <a
+        class="button"
+        href="#about"
+      >
+        About
+      </a>
+
+    </div>
+
+
+    <div class="terminal">
+
+      <div>
+        <span class="purple">></span>
+        whoami
+      </div>
+
+      <div>
+        zaidenx
+      </div>
+
+      <br>
+
+      <div>
+        <span class="purple">></span>
+        domain
+      </div>
+
+      <div>
+        紫.台灣
+      </div>
+
+      <br>
+
+      <div id="projects">
+        <span class="purple">></span>
+        projects
+      </div>
+
+      <div>
+        LLVM → CryptoLine
+      </div>
+
+      <div>
+        AI / User Simulation
+      </div>
+
+      <div>
+        Random Ensemble Learning
+      </div>
+
+      <br>
+
+      <div id="about">
+        <span class="purple">></span>
+        status
+      </div>
+
+      <div>
+        building cool things...
+      </div>
+
+    </div>
+
+
+    <footer>
+      © 2026 紫.台灣
+    </footer>
+
+  </main>
+
+</body>
+</html>
